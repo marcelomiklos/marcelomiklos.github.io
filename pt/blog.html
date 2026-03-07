@@ -1,0 +1,29 @@
+---
+layout: default
+title: "Blog"
+lang: pt
+permalink: /pt/blog/
+---
+{% assign t = site.data.pt %}
+
+<section class="page-content">
+  <div class="container">
+    <h1 class="page-title">{{ t.blog.title }}</h1>
+
+    {% if site.posts.size > 0 %}
+    <div class="post-list">
+      {% for post in site.posts %}
+      <div class="post-item">
+        <div>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+        </div>
+        <time>{{ post.date | date: "%d/%m/%Y" }}</time>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p style="color: var(--text-secondary);">{{ t.blog.no_posts }}</p>
+    {% endif %}
+  </div>
+</section>

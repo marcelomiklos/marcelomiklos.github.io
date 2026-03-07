@@ -1,0 +1,63 @@
+---
+layout: default
+title: "About"
+lang: en
+permalink: /en/about/
+---
+{% assign t = site.data.en %}
+
+<section class="page-content">
+  <div class="container">
+    <h1 class="page-title">{{ t.about.title }}</h1>
+    <p style="margin-bottom: 2rem; color: var(--text-secondary); font-size: 1.05rem;">{{ t.about.intro }}</p>
+
+    <div class="cv-section">
+      <h2>{{ t.about.experience }}</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Position / Role</h3>
+          <p class="company">Example Company</p>
+          <p class="period">2022 &mdash; Present</p>
+          <p>Description of activities and responsibilities. Edit this content with your real information.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Previous Role</h3>
+          <p class="company">Another Company</p>
+          <p class="period">2019 &mdash; 2022</p>
+          <p>Description of activities and responsibilities.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <h2>{{ t.about.education }}</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Technology Degree</h3>
+          <p class="company">Example University</p>
+          <p class="period">2015 &mdash; 2019</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <h2>{{ t.about.skills }}</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">AWS</span>
+        <span class="skill-tag">Linux</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">HTML/CSS</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Node.js</span>
+      </div>
+    </div>
+
+    <div style="margin-top: 2rem;">
+      <a href="#" class="btn btn-outline">{{ t.about.download_cv }}</a>
+    </div>
+  </div>
+</section>

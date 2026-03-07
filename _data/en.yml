@@ -1,0 +1,63 @@
+nav:
+  home: "Home"
+  about: "About"
+  about_slug: "about"
+  projects: "Projects"
+  projects_slug: "projects"
+  blog: "Blog"
+  blog_slug: "blog"
+  shop: "Shop"
+  shop_slug: "shop"
+  contact: "Contact"
+  contact_slug: "contact"
+
+hero:
+  greeting: "Hi, I'm"
+  subtitle: "IT Professional"
+  bio: "Passionate about technology, development and creative solutions. Here you'll find my projects, articles and a bit about me."
+  cta_projects: "View projects"
+  cta_cv: "Resume"
+
+about:
+  title: "About me"
+  intro: "Information Technology professional with experience in development, infrastructure and project management."
+  experience: "Experience"
+  education: "Education"
+  skills: "Skills"
+  certifications: "Certifications"
+  download_cv: "Download CV (PDF)"
+
+projects:
+  title: "Projects"
+  view_code: "Code"
+  view_demo: "Demo"
+
+blog:
+  title: "Blog"
+  by: "by"
+  back: "Back to blog"
+  read_more: "Read more"
+  no_posts: "No posts yet."
+
+shop:
+  title: "Shop"
+  subtitle: "Items I'm letting go. Products in great condition!"
+  available: "Available"
+  sold: "Sold"
+  sold_msg: "This item has already been sold."
+  contact_btn: "I want to buy"
+  whatsapp_msg: "Hi! I'm interested in the item:"
+  back: "Back to shop"
+  no_items: "No items for sale at the moment."
+
+contact:
+  title: "Contact"
+  subtitle: "Want to chat? Get in touch through any of the channels below."
+
+footer:
+  rights: "All rights reserved."
+
+home:
+  latest_posts: "Latest posts"
+  latest_items: "In the shop"
+  view_all: "View all"

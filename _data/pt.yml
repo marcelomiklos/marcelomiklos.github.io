@@ -1,0 +1,63 @@
+nav:
+  home: "Home"
+  about: "Sobre"
+  about_slug: "sobre"
+  projects: "Projetos"
+  projects_slug: "projetos"
+  blog: "Blog"
+  blog_slug: "blog"
+  shop: "Loja"
+  shop_slug: "loja"
+  contact: "Contato"
+  contact_slug: "contato"
+
+hero:
+  greeting: "Ol&aacute;, eu sou"
+  subtitle: "Profissional de TI"
+  bio: "Apaixonado por tecnologia, desenvolvimento e solu&ccedil;&otilde;es criativas. Aqui voc&ecirc; encontra meus projetos, artigos e um pouco sobre mim."
+  cta_projects: "Ver projetos"
+  cta_cv: "Curr&iacute;culo"
+
+about:
+  title: "Sobre mim"
+  intro: "Profissional de Tecnologia da Informa&ccedil;&atilde;o com experi&ecirc;ncia em desenvolvimento, infraestrutura e gest&atilde;o de projetos."
+  experience: "Experi&ecirc;ncia"
+  education: "Forma&ccedil;&atilde;o"
+  skills: "Habilidades"
+  certifications: "Certifica&ccedil;&otilde;es"
+  download_cv: "Baixar CV em PDF"
+
+projects:
+  title: "Projetos"
+  view_code: "C&oacute;digo"
+  view_demo: "Demo"
+
+blog:
+  title: "Blog"
+  by: "por"
+  back: "Voltar ao blog"
+  read_more: "Ler mais"
+  no_posts: "Nenhum post ainda."
+
+shop:
+  title: "Loja"
+  subtitle: "Itens que estou desapegando. Produtos em &oacute;timo estado!"
+  available: "Dispon&iacute;vel"
+  sold: "Vendido"
+  sold_msg: "Este item j&aacute; foi vendido."
+  contact_btn: "Quero comprar"
+  whatsapp_msg: "Ol&aacute;! Tenho interesse no item:"
+  back: "Voltar para a loja"
+  no_items: "Nenhum item &agrave; venda no momento."
+
+contact:
+  title: "Contato"
+  subtitle: "Quer bater um papo? Entre em contato por qualquer um dos canais abaixo."
+
+footer:
+  rights: "Todos os direitos reservados."
+
+home:
+  latest_posts: "&Uacute;ltimos posts"
+  latest_items: "Na loja"
+  view_all: "Ver todos"

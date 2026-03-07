@@ -1,0 +1,56 @@
+title: "Marcelo Miklos"
+description: "Portfólio, blog e currículo de Marcelo Miklos"
+url: "https://marcelomiklos.github.io"
+baseurl: ""
+lang: "pt-BR"
+
+permalink: /blog/:year/:month/:day/:title/
+
+collections:
+  loja:
+    output: true
+    permalink: /loja/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "loja"
+    values:
+      layout: "item"
+  - scope:
+      path: "pt"
+      type: "pages"
+    values:
+      layout: "page"
+      lang: "pt"
+  - scope:
+      path: "en"
+      type: "pages"
+    values:
+      layout: "page"
+      lang: "en"
+
+# Redes sociais
+social:
+  github: "marcelomiklos"
+  linkedin: "marcelomiklos"
+  twitter: ""
+  instagram: ""
+  whatsapp: ""
+  email: "marcelo_miklos@hotmail.com"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

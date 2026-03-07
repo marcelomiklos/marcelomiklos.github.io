@@ -1,0 +1,35 @@
+---
+layout: default
+title: "Shop"
+lang: en
+permalink: /en/shop/
+---
+{% assign t = site.data.en %}
+
+<section class="page-content">
+  <div class="container">
+    <h1 class="page-title">{{ t.shop.title }}</h1>
+    <p style="color: var(--text-secondary); margin-bottom: 2rem;">{{ t.shop.subtitle }}</p>
+
+    {% if site.loja.size > 0 %}
+    <div class="shop-grid">
+      {% for item in site.loja %}
+      <a href="{{ item.url | relative_url }}" class="shop-card">
+        <img src="{{ item.image | relative_url }}" alt="{{ item.title }}">
+        {% if item.status == "disponivel" or item.status == "available" %}
+        <span class="item-badge available">{{ t.shop.available }}</span>
+        {% else %}
+        <span class="item-badge sold">{{ t.shop.sold }}</span>
+        {% endif %}
+        <div class="shop-card-body">
+          <h3>{{ item.title }}</h3>
+          <p class="item-price">R$ {{ item.price }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p style="color: var(--text-secondary);">{{ t.shop.no_items }}</p>
+    {% endif %}
+  </div>
+</section>

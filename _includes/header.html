@@ -1,0 +1,23 @@
+{% assign lang = page.lang | default: "pt" %}
+{% assign t = site.data[lang] %}
+<header class="site-header">
+  <div class="container">
+    <a href="{{ '/' | append: lang | append: '/' | relative_url }}" class="logo">
+      <span class="logo-bracket">&lt;</span>MM<span class="logo-bracket">/&gt;</span>
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="{{ '/' | append: lang | append: '/' | relative_url }}">{{ t.nav.home }}</a>
+      <a href="{{ '/' | append: lang | append: '/' | append: t.nav.about_slug | append: '/' | relative_url }}">{{ t.nav.about }}</a>
+      <a href="{{ '/' | append: lang | append: '/' | append: t.nav.projects_slug | append: '/' | relative_url }}">{{ t.nav.projects }}</a>
+      <a href="{{ '/' | append: lang | append: '/' | append: t.nav.blog_slug | append: '/' | relative_url }}">{{ t.nav.blog }}</a>
+      <a href="{{ '/' | append: lang | append: '/' | append: t.nav.shop_slug | append: '/' | relative_url }}">{{ t.nav.shop }}</a>
+      <a href="{{ '/' | append: lang | append: '/' | append: t.nav.contact_slug | append: '/' | relative_url }}">{{ t.nav.contact }}</a>
+    </nav>
+    <div class="header-actions">
+      {% include lang-switcher.html %}
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
