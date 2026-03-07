@@ -49,6 +49,19 @@ shop:
   whatsapp_msg: "Ol&aacute;! Tenho interesse no item:"
   back: "Voltar para a loja"
   no_items: "Nenhum item &agrave; venda no momento."
+  filter_all: "Todos"
+  filter_category: "Categoria"
+  filter_condition: "Condi&ccedil;&atilde;o"
+  categories:
+    calcados: "Cal&ccedil;ados"
+    moda: "Moda"
+    eletronicos: "Eletr&ocirc;nicos"
+    acessorios: "Acess&oacute;rios"
+    outros: "Outros"
+  conditions:
+    novo: "Novo"
+    seminovo: "Seminovo"
+    usado: "Usado"
 
 contact:
   title: "Contato"

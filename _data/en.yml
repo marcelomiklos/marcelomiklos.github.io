@@ -49,6 +49,19 @@ shop:
   whatsapp_msg: "Hi! I'm interested in the item:"
   back: "Back to shop"
   no_items: "No items for sale at the moment."
+  filter_all: "All"
+  filter_category: "Category"
+  filter_condition: "Condition"
+  categories:
+    calcados: "Footwear"
+    moda: "Fashion"
+    eletronicos: "Electronics"
+    acessorios: "Accessories"
+    outros: "Other"
+  conditions:
+    novo: "New"
+    seminovo: "Like New"
+    usado: "Used"
 
 contact:
   title: "Contact"

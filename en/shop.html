@@ -12,10 +12,30 @@ permalink: /en/shop/
     <p style="color: var(--text-secondary); margin-bottom: 2rem;">{{ t.shop.subtitle }}</p>
 
     {% if site.loja.size > 0 %}
-    <div class="shop-grid">
+
+    <div class="shop-filters">
+      <div class="filter-group">
+        <span class="filter-label">{{ t.shop.filter_category }}:</span>
+        <button class="filter-btn active" data-filter="category" data-value="all">{{ t.shop.filter_all }}</button>
+        {% assign categories = site.loja | map: "category" | uniq | sort %}
+        {% for cat in categories %}
+        <button class="filter-btn" data-filter="category" data-value="{{ cat }}">{{ t.shop.categories[cat] | default: cat }}</button>
+        {% endfor %}
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">{{ t.shop.filter_condition }}:</span>
+        <button class="filter-btn active" data-filter="condition" data-value="all">{{ t.shop.filter_all }}</button>
+        {% assign conditions = site.loja | map: "condition" | uniq | sort %}
+        {% for cond in conditions %}
+        <button class="filter-btn" data-filter="condition" data-value="{{ cond }}">{{ t.shop.conditions[cond] | default: cond }}</button>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="shop-grid" id="shop-grid">
       {% for item in site.loja %}
-      <a href="{{ item.url | relative_url }}" class="shop-card">
-        <img src="{{ item.image | relative_url }}" alt="{{ item.title }}">
+      <a href="{{ item.url | relative_url }}" class="shop-card" data-category="{{ item.category }}" data-condition="{{ item.condition }}">
+        <img src="{{ item.image | relative_url }}" alt="{{ item.title }}" loading="lazy">
         {% if item.status == "disponivel" or item.status == "available" %}
         <span class="item-badge available">{{ t.shop.available }}</span>
         {% else %}
@@ -23,13 +43,52 @@ permalink: /en/shop/
         {% endif %}
         <div class="shop-card-body">
           <h3>{{ item.title }}</h3>
+          <span class="shop-card-condition">{{ t.shop.conditions[item.condition] | default: item.condition }}</span>
           <p class="item-price">R$ {{ item.price }}</p>
         </div>
       </a>
       {% endfor %}
     </div>
+
+    <p class="shop-no-results" id="shop-no-results" style="display:none; color: var(--text-secondary);">{{ t.shop.no_items }}</p>
+
     {% else %}
     <p style="color: var(--text-secondary);">{{ t.shop.no_items }}</p>
     {% endif %}
   </div>
 </section>
+
+<script>
+(function() {
+  var activeFilters = { category: 'all', condition: 'all' };
+  var buttons = document.querySelectorAll('.filter-btn');
+  var cards = document.querySelectorAll('.shop-card');
+  var noResults = document.getElementById('shop-no-results');
+
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var type = this.dataset.filter;
+      var value = this.dataset.value;
+      activeFilters[type] = value;
+
+      document.querySelectorAll('.filter-btn[data-filter="' + type + '"]').forEach(function(b) {
+        b.classList.remove('active');
+      });
+      this.classList.add('active');
+
+      var visible = 0;
+      cards.forEach(function(card) {
+        var catMatch = activeFilters.category === 'all' || card.dataset.category === activeFilters.category;
+        var condMatch = activeFilters.condition === 'all' || card.dataset.condition === activeFilters.condition;
+        if (catMatch && condMatch) {
+          card.style.display = '';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      noResults.style.display = visible === 0 ? '' : 'none';
+    });
+  });
+})();
+</script>

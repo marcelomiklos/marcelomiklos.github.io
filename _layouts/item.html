@@ -7,7 +7,27 @@ layout: default
   <div class="container">
     <div class="item-detail">
       <div class="item-image-large">
+        {% if page.images and page.images.size > 0 %}
+        <div class="gallery">
+          <div class="gallery-main">
+            <img id="gallery-main-img" src="{{ page.images[0] | relative_url }}" alt="{{ page.title }}">
+            {% if page.images.size > 1 %}
+            <button class="gallery-nav gallery-prev" onclick="changeImage(-1)" aria-label="Anterior">&lsaquo;</button>
+            <button class="gallery-nav gallery-next" onclick="changeImage(1)" aria-label="Próxima">&rsaquo;</button>
+            <span class="gallery-counter"><span id="gallery-current">1</span>/{{ page.images.size }}</span>
+            {% endif %}
+          </div>
+          {% if page.images.size > 1 %}
+          <div class="gallery-thumbs">
+            {% for img in page.images %}
+            <img src="{{ img | relative_url }}" alt="{{ page.title }} - foto {{ forloop.index }}" class="gallery-thumb {% if forloop.first %}active{% endif %}" onclick="setImage({{ forloop.index0 }})" loading="lazy">
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+        {% else %}
         <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+        {% endif %}
         {% if page.status == "vendido" or page.status == "sold" %}
         <span class="item-badge sold">{{ t.shop.sold | default: "Vendido" }}</span>
         {% endif %}
@@ -31,3 +51,31 @@ layout: default
     <a href="{{ '/' | append: lang | append: '/' | append: t.nav.shop_slug | append: '/' | relative_url }}" class="back-link">&larr; {{ t.shop.back | default: "Voltar para a loja" }}</a>
   </div>
 </article>
+
+{% if page.images and page.images.size > 1 %}
+<script>
+(function() {
+  var images = [{% for img in page.images %}"{{ img | relative_url }}"{% unless forloop.last %},{% endunless %}{% endfor %}];
+  var current = 0;
+  var mainImg = document.getElementById('gallery-main-img');
+  var counter = document.getElementById('gallery-current');
+  var thumbs = document.querySelectorAll('.gallery-thumb');
+
+  window.changeImage = function(dir) {
+    current = (current + dir + images.length) % images.length;
+    update();
+  };
+  window.setImage = function(idx) {
+    current = idx;
+    update();
+  };
+  function update() {
+    mainImg.src = images[current];
+    counter.textContent = current + 1;
+    thumbs.forEach(function(t, i) {
+      t.classList.toggle('active', i === current);
+    });
+  }
+})();
+</script>
+{% endif %}
