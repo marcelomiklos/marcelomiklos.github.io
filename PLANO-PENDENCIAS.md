@@ -5,6 +5,22 @@
 
 ---
 
+## Já concluído
+
+- [x] Estrutura Jekyll completa (layouts, includes, CSS, JS)
+- [x] Dark mode responsivo
+- [x] Bilíngue PT-BR / EN com switcher
+- [x] Seções: Home, Sobre, Projetos, Blog, Loja, Contato
+- [x] Ícones sociais (GitHub, LinkedIn, WhatsApp, Email, Instagram, Twitter/X)
+- [x] Integração Calendly na página de contato
+- [x] Loja com 17 pares de tênis catalogados a partir de fotos
+- [x] Galeria de fotos com navegação e thumbnails por item
+- [x] Filtros na loja por categoria e condição
+- [x] Encoding UTF-8 corrigido (sem entidades HTML quebradas)
+- [x] Deploy no GitHub Pages funcionando
+
+---
+
 ## Pendência 1 — Foto de perfil
 
 ### O que fazer
@@ -49,10 +65,6 @@ Para cada curso:
 | `pt/sobre.html` | Experiência, formação, habilidades, certificações (PT-BR) |
 | `en/about.html` | Mesmos dados traduzidos para inglês |
 
-### Como executar
-1. Fornecer os dados acima ao Claude
-2. O Claude atualiza os 2 arquivos, faz commit e push
-
 ---
 
 ## Pendência 3 — Projetos reais
@@ -72,60 +84,84 @@ Para cada projeto:
 | `pt/projetos.html` | Cards de projetos com dados reais (PT-BR) |
 | `en/projects.html` | Mesmos dados traduzidos para inglês |
 
-### Como executar
-1. Fornecer os dados acima ao Claude
-2. O Claude substitui os projetos de exemplo pelos reais, faz commit e push
-
 ---
 
 ## Pendência 4 — Redes sociais adicionais (opcional)
 
 ### Dados a fornecer ao Claude
-- [ ] Instagram (username, se quiser adicionar)
-- [ ] Twitter/X (username, se quiser adicionar)
+- [ ] Instagram (username)
+- [ ] Twitter/X (username)
 
 ### Arquivo que será atualizado
 | Arquivo | O que trocar |
 |---------|-------------|
 | `_config.yml` | Campos `instagram` e `twitter` na seção `social` |
 
-### Como executar
-1. Informar os usernames ao Claude
-2. O Claude atualiza o `_config.yml`, faz commit e push
-3. Os ícones aparecem automaticamente no footer e páginas de contato
-
 ---
 
-## Pendência 5 — Loja (itens reais)
+## Pendência 5 — Loja: novos itens
 
-### Para cada item à venda, fornecer ao Claude:
+### Para cada novo item à venda, fornecer ao Claude:
 - [ ] Nome do item
 - [ ] Preço (R$)
 - [ ] Descrição detalhada
 - [ ] Foto(s) do produto (caminho no Mac)
 - [ ] Status: disponível ou vendido
-- [ ] Categoria (calçados, eletrônicos, roupas, etc.)
+- [ ] Categoria: `calcados`, `moda`, `eletronicos`, `acessorios` ou `outros`
+- [ ] Condição: `novo`, `seminovo` ou `usado`
 
-### Como executar
+### Como adicionar
 1. Fornecer dados + foto ao Claude
-2. O Claude cria um arquivo em `_loja/`, copia a foto para `assets/img/loja/`, faz commit e push
-3. O item aparece automaticamente na loja e na home
+2. O Claude cria arquivo em `_loja/`, copia fotos para `assets/img/loja/<nome>/`
+3. Commit e push — item aparece automaticamente na loja
 
-### Para marcar item como vendido
+### Como marcar como vendido
 1. Avisar o Claude qual item foi vendido
-2. O Claude troca `status: disponivel` para `status: vendido`, faz commit e push
-3. O badge muda de verde "Disponível" para vermelho "Vendido"
+2. O Claude troca `status: disponivel` para `status: vendido`
+3. Badge muda de verde "Disponível" para vermelho "Vendido"
+
+### Categorias disponíveis
+| Valor no front matter | Exibição PT | Exibição EN |
+|----------------------|-------------|-------------|
+| `calcados` | Calçados | Footwear |
+| `moda` | Moda | Fashion |
+| `eletronicos` | Eletrônicos | Electronics |
+| `acessorios` | Acessórios | Accessories |
+| `outros` | Outros | Other |
+
+### Condições disponíveis
+| Valor no front matter | Exibição PT | Exibição EN |
+|----------------------|-------------|-------------|
+| `novo` | Novo | New |
+| `seminovo` | Seminovo | Like New |
+| `usado` | Usado | Used |
+
+---
+
+## Pendência 6 — Domínio customizado (futuro)
+
+### Opção recomendada
+Registrar `marcelomiklos.com.br` (~R$40/ano) em registro.br
+
+### Como configurar
+1. Registrar domínio em registro.br
+2. Apontar DNS para GitHub Pages:
+   - Tipo A: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - Tipo CNAME (www): `marcelomiklos.github.io`
+3. Criar arquivo `CNAME` na raiz do repo com o domínio
+4. Ativar HTTPS no GitHub Pages (Settings > Pages > Enforce HTTPS)
 
 ---
 
 ## Resumo rápido
 
-| # | Pendência | Depende de | Tempo do Claude |
-|---|-----------|-----------|-----------------|
-| 1 | Foto de perfil | Foto JPG/PNG | 1 minuto |
-| 2 | Currículo | Dados profissionais | 5 minutos |
-| 3 | Projetos reais | Descrição dos projetos | 5 minutos |
-| 4 | Redes sociais | Usernames | 1 minuto |
-| 5 | Itens na loja | Dados + fotos | 2 min por item |
+| # | Pendência | Depende de | Prioridade |
+|---|-----------|-----------|------------|
+| 1 | Foto de perfil | Foto JPG/PNG | Alta |
+| 2 | Currículo / Sobre mim | Dados profissionais | Alta |
+| 3 | Projetos reais | Descrição dos projetos | Média |
+| 4 | Redes sociais | Usernames | Baixa |
+| 5 | Novos itens na loja | Dados + fotos | Conforme necessidade |
+| 6 | Domínio customizado | Registro + ~R$40/ano | Baixa |
 
 **Basta fornecer os dados e o Claude faz todo o resto automaticamente.**
