@@ -18,6 +18,23 @@
 - [x] Filtros na loja por categoria e condição
 - [x] Encoding UTF-8 corrigido (sem entidades HTML quebradas)
 - [x] Deploy no GitHub Pages funcionando
+- [x] Auditoria e correção completa de fotos trocadas em 6 itens da loja
+- [x] Layout carousel limpo (setas + dots, sem thumbnails)
+
+### Correção de fotos — Detalhes (concluída em 08/03/2026)
+
+Foram encontradas fotos trocadas entre itens. Todas foram corrigidas usando os 74 arquivos UUID fonte em `_loja/tenis-catalogar/`.
+
+| Item | Fotos corrigidas | Status |
+|------|-----------------|--------|
+| jordan-1-low-iced-lilac | Restauradas: 02-etiqueta, 03-sola, 04-caixa-etiqueta | OK - 5 fotos |
+| nike-dunk-black-sail | Restaurada: 01-capa (única foto disponível nos fontes) | OK - 1 foto |
+| jordan-1-low-sky-purple | Restaurada: 06-caixa-etiqueta | OK - 6 fotos |
+| jordan-13-retro-bred | Restaurada: 04-etiqueta | OK - 6 fotos |
+| nike-air-force-1-black | Restaurada: 03-lateral2 | OK - 8 fotos |
+| nike-renew-elevate-3 | Restaurada: 02-lateral | OK - 6 fotos |
+
+**Nota:** O Nike Dunk Black Sail tem apenas 1 foto nos arquivos fonte. Se tiver fotos adicionais desse tênis, forneça ao Claude para adicionar.
 
 ---
 

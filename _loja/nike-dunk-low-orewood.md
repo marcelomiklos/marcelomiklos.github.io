@@ -3,9 +3,9 @@ title: "Nike Dunk Low Retro SE - Orewood"
 price: 550.00
 status: disponivel
 category: calcados
-condition: novo
+condition: usado
 image: /assets/img/loja/nike-dunk-low-orewood.jpg
-description: "Nike Dunk Low Retro SE na colorway Lt Orewood Brn/Pale Ivory com detalhes em cross-stitch vermelho. Tamanho 39 BR (7.5 US). Novo, na caixa original."
+description: "Nike Dunk Low Retro SE na colorway Lt Orewood Brn/Pale Ivory com detalhes em cross-stitch vermelho. Tamanho 39 BR (7.5 US). Usado, em bom estado."
 contact: whatsapp
 images:
   - /assets/img/loja/nike-dunk-low-orewood/01-capa.jpg
@@ -22,4 +22,4 @@ images:
 - **Tamanho:** 39 BR / 7.5 US / 40.5 EUR
 - **Cor:** Lt Orewood Brn/Pale Ivory
 - **Material:** Canvas com detalhes cross-stitch
-- **Estado:** Novo na caixa
+- **Estado:** Usado
