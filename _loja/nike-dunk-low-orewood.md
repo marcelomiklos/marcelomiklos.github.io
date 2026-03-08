@@ -9,11 +9,9 @@ description: "Nike Dunk Low Retro SE na colorway Lt Orewood Brn/Pale Ivory com d
 contact: whatsapp
 images:
   - /assets/img/loja/nike-dunk-low-orewood/01-capa.jpg
-  - /assets/img/loja/nike-dunk-low-orewood/02-lateral.jpg
   - /assets/img/loja/nike-dunk-low-orewood/03-traseira.jpg
   - /assets/img/loja/nike-dunk-low-orewood/04-sola.jpg
   - /assets/img/loja/nike-dunk-low-orewood/05-etiqueta.jpg
-  - /assets/img/loja/nike-dunk-low-orewood/06-caixa-etiqueta.jpg
   - /assets/img/loja/nike-dunk-low-orewood/07-caixa.jpg
 ---
 
