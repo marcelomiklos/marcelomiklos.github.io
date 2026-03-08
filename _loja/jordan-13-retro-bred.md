@@ -9,9 +9,7 @@ description: "Air Jordan 13 Retro na colorway Bred (Black/True Red-White). Taman
 contact: whatsapp
 images:
   - /assets/img/loja/jordan-13-retro-bred/01-capa.jpg
-  - /assets/img/loja/jordan-13-retro-bred/02-traseira.jpg
   - /assets/img/loja/jordan-13-retro-bred/03-sola.jpg
-  - /assets/img/loja/jordan-13-retro-bred/04-etiqueta.jpg
   - /assets/img/loja/jordan-13-retro-bred/05-caixa-etiqueta.jpg
   - /assets/img/loja/jordan-13-retro-bred/06-caixa.jpg
 ---

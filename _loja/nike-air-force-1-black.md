@@ -10,10 +10,8 @@ contact: whatsapp
 images:
   - /assets/img/loja/nike-air-force-1-black/01-capa.jpg
   - /assets/img/loja/nike-air-force-1-black/02-lateral.jpg
-  - /assets/img/loja/nike-air-force-1-black/03-lateral2.jpg
   - /assets/img/loja/nike-air-force-1-black/04-traseira.jpg
   - /assets/img/loja/nike-air-force-1-black/05-sola.jpg
-  - /assets/img/loja/nike-air-force-1-black/06-etiqueta.jpg
   - /assets/img/loja/nike-air-force-1-black/07-caixa.jpg
   - /assets/img/loja/nike-air-force-1-black/08-caixa-etiqueta.jpg
 ---

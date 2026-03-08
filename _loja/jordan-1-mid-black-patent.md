@@ -1,6 +1,6 @@
 ---
 title: "Air Jordan 1 Mid - Black Patent Leather"
-price: 650.00
+price: 450.00
 status: disponivel
 category: calcados
 condition: usado

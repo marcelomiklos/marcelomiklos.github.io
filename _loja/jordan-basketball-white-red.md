@@ -1,6 +1,6 @@
 ---
 title: "Jordan One Take 5 - White/Black/Red"
-price: 400.00
+price: 450.00
 status: disponivel
 category: calcados
 condition: usado

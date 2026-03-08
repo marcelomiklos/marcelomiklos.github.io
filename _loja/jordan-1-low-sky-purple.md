@@ -1,6 +1,6 @@
 ---
 title: "Air Jordan 1 Low - Sky J Purple"
-price: 500.00
+price: 550.00
 status: disponivel
 category: calcados
 condition: novo
@@ -13,7 +13,6 @@ images:
   - /assets/img/loja/jordan-1-low-sky-purple/03-traseira.jpg
   - /assets/img/loja/jordan-1-low-sky-purple/04-sola.jpg
   - /assets/img/loja/jordan-1-low-sky-purple/05-etiqueta.jpg
-  - /assets/img/loja/jordan-1-low-sky-purple/06-caixa-etiqueta.jpg
 ---
 
 ## Detalhes

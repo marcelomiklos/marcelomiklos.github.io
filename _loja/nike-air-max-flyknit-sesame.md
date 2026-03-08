@@ -1,6 +1,6 @@
 ---
 title: "Nike Air Max Flyknit Racer - Sesame"
-price: 500.00
+price: 450.00
 status: disponivel
 category: calcados
 condition: novo
@@ -9,7 +9,6 @@ description: "Nike Air Max Flyknit Racer (Women's) na colorway Sesame/Black-Ocea
 contact: whatsapp
 images:
   - /assets/img/loja/nike-air-max-flyknit-sesame/01-capa.jpg
-  - /assets/img/loja/nike-air-max-flyknit-sesame/02-lateral.jpg
   - /assets/img/loja/nike-air-max-flyknit-sesame/03-etiqueta.jpg
   - /assets/img/loja/nike-air-max-flyknit-sesame/04-caixa-etiqueta.jpg
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Air Jordan 1 Mid - Dark Grey/Black"
-price: 600.00
+price: 550.00
 status: disponivel
 category: calcados
 condition: usado

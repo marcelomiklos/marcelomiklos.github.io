@@ -1,6 +1,6 @@
 ---
 title: "Air Jordan 6 Retro - Midnight Navy"
-price: 900.00
+price: 450.00
 status: disponivel
 category: calcados
 condition: usado
