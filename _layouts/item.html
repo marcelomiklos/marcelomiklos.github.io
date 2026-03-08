@@ -34,7 +34,12 @@ layout: default
       </div>
       <div class="item-info">
         <h1>{{ page.title }}</h1>
-        <p class="item-price">R$ {{ page.price | round: 2 }}</p>
+        <div class="item-meta-row">
+          <p class="item-price">R$ {{ page.price | round: 2 }}</p>
+          {% if page.condition %}
+          <span class="shop-card-condition condition-{{ page.condition }}">{{ t.shop.conditions[page.condition] | default: page.condition }}</span>
+          {% endif %}
+        </div>
         <p class="item-description">{{ page.description }}</p>
         {% if page.status == "disponivel" or page.status == "available" %}
         {% if site.social.whatsapp != "" %}

@@ -472,6 +472,16 @@ ul { list-style: none; }
   margin-bottom: 0.25rem;
   text-transform: uppercase;
 }
+.condition-usado { color: var(--orange); }
+.condition-seminovo { color: var(--green); }
+.condition-novo { color: var(--accent); }
+.item-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.item-meta-row .item-price { margin-bottom: 0; }
 
 /* Item detail */
 .item-content { padding: 3rem 0; }

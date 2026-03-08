@@ -5,7 +5,7 @@ status: disponivel
 category: calcados
 condition: usado
 image: /assets/img/loja/jordan-basketball-white-red.jpg
-description: "Jordan One Take 5 (basquete) na colorway White/Black/Red. Tamanho 40 BR (8.5 US). Novo, na caixa original."
+description: "Jordan One Take 5 (basquete) na colorway White/Black/Red. Tamanho 40 BR (8.5 US). Usado, em bom estado."
 contact: whatsapp
 images:
   - /assets/img/loja/jordan-basketball-white-red/01-capa.jpg
@@ -17,4 +17,4 @@ images:
 - **Modelo:** Jordan One Take 5
 - **Tamanho:** 40 BR / 8.5 US / 42 EUR
 - **Cor:** White/Black/Red
-- **Estado:** Novo na caixa
+- **Estado:** Usado

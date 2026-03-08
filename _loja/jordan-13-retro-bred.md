@@ -5,7 +5,7 @@ status: disponivel
 category: calcados
 condition: usado
 image: /assets/img/loja/jordan-13-retro-bred.jpg
-description: "Air Jordan 13 Retro na colorway Bred (Black/True Red-White). Tamanho 40 BR (8.5 US). SKU: 414571 062. Novo, na caixa original."
+description: "Air Jordan 13 Retro na colorway Bred (Black/True Red-White). Tamanho 40 BR (8.5 US). SKU: 414571 062. Usado, em bom estado."
 contact: whatsapp
 images:
   - /assets/img/loja/jordan-13-retro-bred/01-capa.jpg
@@ -23,4 +23,4 @@ images:
 - **SKU:** 414571 062
 - **Tamanho:** 40 BR / 8.5 US / 42 EUR
 - **Cor:** Black/True Red-White
-- **Estado:** Novo na caixa
+- **Estado:** Usado

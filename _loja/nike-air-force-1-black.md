@@ -5,7 +5,7 @@ status: disponivel
 category: calcados
 condition: usado
 image: /assets/img/loja/nike-air-force-1-black.jpg
-description: "Nike Air Force 1 '07 na colorway Triple Black. Tamanho 39 BR (7.5 US). SKU: CW2288 001. Novo, na caixa original."
+description: "Nike Air Force 1 '07 na colorway Triple Black. Tamanho 39 BR (7.5 US). SKU: CW2288 001. Usado, em bom estado."
 contact: whatsapp
 images:
   - /assets/img/loja/nike-air-force-1-black/01-capa.jpg
@@ -25,4 +25,4 @@ images:
 - **SKU:** CW2288 001
 - **Tamanho:** 39 BR / 7.5 US / 40.5 EUR
 - **Cor:** Black/Black (Triple Black)
-- **Estado:** Novo na caixa
+- **Estado:** Usado
