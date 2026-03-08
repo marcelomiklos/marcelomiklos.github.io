@@ -48,6 +48,11 @@ layout: default
         {% endif %}
       </div>
     </div>
+    {% if content != "" %}
+    <div class="item-details post-body">
+      {{ content }}
+    </div>
+    {% endif %}
     <a href="{{ '/' | append: lang | append: '/' | append: t.nav.shop_slug | append: '/' | relative_url }}" class="back-link">&larr; {{ t.shop.back | default: "Voltar para a loja" }}</a>
   </div>
 </article>
