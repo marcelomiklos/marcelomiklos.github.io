@@ -3,7 +3,7 @@ title: "Nike Air Force 1 '07 - Triple Black"
 price: 450.00
 status: disponivel
 category: calcados
-condition: novo
+condition: usado
 image: /assets/img/loja/nike-air-force-1-black.jpg
 description: "Nike Air Force 1 '07 na colorway Triple Black. Tamanho 39 BR (7.5 US). SKU: CW2288 001. Novo, na caixa original."
 contact: whatsapp

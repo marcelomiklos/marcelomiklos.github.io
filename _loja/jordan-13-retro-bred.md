@@ -3,7 +3,7 @@ title: "Air Jordan 13 Retro - Bred"
 price: 850.00
 status: disponivel
 category: calcados
-condition: novo
+condition: usado
 image: /assets/img/loja/jordan-13-retro-bred.jpg
 description: "Air Jordan 13 Retro na colorway Bred (Black/True Red-White). Tamanho 40 BR (8.5 US). SKU: 414571 062. Novo, na caixa original."
 contact: whatsapp
