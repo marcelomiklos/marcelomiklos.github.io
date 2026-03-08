@@ -12,24 +12,24 @@ nav:
   contact_slug: "contato"
 
 hero:
-  greeting: "Ol&aacute;, eu sou"
+  greeting: "Olá, eu sou"
   subtitle: "Profissional de TI"
-  bio: "Apaixonado por tecnologia, desenvolvimento e solu&ccedil;&otilde;es criativas. Aqui voc&ecirc; encontra meus projetos, artigos e um pouco sobre mim."
+  bio: "Apaixonado por tecnologia, desenvolvimento e soluções criativas. Aqui você encontra meus projetos, artigos e um pouco sobre mim."
   cta_projects: "Ver projetos"
-  cta_cv: "Curr&iacute;culo"
+  cta_cv: "Currículo"
 
 about:
   title: "Sobre mim"
-  intro: "Profissional de Tecnologia da Informa&ccedil;&atilde;o com experi&ecirc;ncia em desenvolvimento, infraestrutura e gest&atilde;o de projetos."
-  experience: "Experi&ecirc;ncia"
-  education: "Forma&ccedil;&atilde;o"
+  intro: "Profissional de Tecnologia da Informação com experiência em desenvolvimento, infraestrutura e gestão de projetos."
+  experience: "Experiência"
+  education: "Formação"
   skills: "Habilidades"
-  certifications: "Certifica&ccedil;&otilde;es"
+  certifications: "Certificações"
   download_cv: "Baixar CV em PDF"
 
 projects:
   title: "Projetos"
-  view_code: "C&oacute;digo"
+  view_code: "Código"
   view_demo: "Demo"
 
 blog:
@@ -41,22 +41,22 @@ blog:
 
 shop:
   title: "Loja"
-  subtitle: "Itens que estou desapegando. Produtos em &oacute;timo estado!"
-  available: "Dispon&iacute;vel"
+  subtitle: "Itens que estou desapegando. Produtos em ótimo estado!"
+  available: "Disponível"
   sold: "Vendido"
-  sold_msg: "Este item j&aacute; foi vendido."
+  sold_msg: "Este item já foi vendido."
   contact_btn: "Quero comprar"
-  whatsapp_msg: "Ol&aacute;! Tenho interesse no item:"
+  whatsapp_msg: "Olá! Tenho interesse no item:"
   back: "Voltar para a loja"
-  no_items: "Nenhum item &agrave; venda no momento."
+  no_items: "Nenhum item à venda no momento."
   filter_all: "Todos"
   filter_category: "Categoria"
-  filter_condition: "Condi&ccedil;&atilde;o"
+  filter_condition: "Condição"
   categories:
-    calcados: "Cal&ccedil;ados"
+    calcados: "Calçados"
     moda: "Moda"
-    eletronicos: "Eletr&ocirc;nicos"
-    acessorios: "Acess&oacute;rios"
+    eletronicos: "Eletrônicos"
+    acessorios: "Acessórios"
     outros: "Outros"
   conditions:
     novo: "Novo"
@@ -71,6 +71,6 @@ footer:
   rights: "Todos os direitos reservados."
 
 home:
-  latest_posts: "&Uacute;ltimos posts"
+  latest_posts: "Últimos posts"
   latest_items: "Na loja"
   view_all: "Ver todos"
